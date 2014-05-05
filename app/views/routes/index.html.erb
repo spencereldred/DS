@@ -1,0 +1,21 @@
+<ul class="nav nav-pills">
+  <li><%= link_to('New route', new_route_path) %></li>
+  <li><%= link_to('Show routes', routes_path) %> </li>   <!-- index -->
+  <li><%= link_to('Sign out', signout_path, :method => :delete )%></li>
+  <div class='spacer'></div>
+</ul>
+
+
+<% @routes.each do |route| %>
+  <div class="row">
+     <div class="col-md-4 col-sm-4">
+      <p class="lead"><%= link_to(route.starting_point, route) %> to <%= route.end_point %>
+
+    </div>
+     <div class="col-md-8 col-sm-8">
+
+    </div>
+  </div>
+<% end %>
+
+
