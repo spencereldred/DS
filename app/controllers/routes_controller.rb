@@ -5,7 +5,7 @@ class RoutesController < ApplicationController
   before_filter :check_route_owner, only: [:edit, :update, :destroy]
 
   def index
-    @routes = Route.all
+    @routes = current_user.routes.all
   end
 
   def new
@@ -13,12 +13,12 @@ class RoutesController < ApplicationController
   end
 
   def create
-    route = Route.create route_params
+    route = current_user.routes.create route_params
     redirect_to(route)
   end
 
   def show
-    @route = Route.find(params[:id])
+    @route = current_user.routes.find(params[:id])
     @stations = @route.stations
     # render :show
   end
