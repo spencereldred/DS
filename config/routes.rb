@@ -2,7 +2,6 @@ TsetseApp::Application.routes.draw do
   resources :users, :routes, :stations, :sessions
 
   root to: "routes#index"
-  # root "routes#index"
 
   get '/signup', to: 'users#new'
   delete '/signout', to: 'sessions#destroy'

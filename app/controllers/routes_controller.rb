@@ -1,8 +1,8 @@
 class RoutesController < ApplicationController
 	include RoutesHelper
 
-	# before_filter :signed_in_user, only: [:create, :new, :edit, :update, :destroy]
- #  before_filter :check_route_owner, only: [:edit, :update, :destroy]
+	before_filter :signed_in_user, only: [:create, :new, :edit, :update, :destroy]
+  before_filter :check_route_owner, only: [:edit, :update, :destroy]
 
   def index
     @routes = Route.all
