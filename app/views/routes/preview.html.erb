@@ -1,6 +1,11 @@
   
 <%= render :partial => 'form' %>
-<a href=""> Save </a>
+  <%= form_for @route do |f| %>
+    <%= f.hidden_field :starting_point%>  
+    <%= f.hidden_field :end_point%>
+    <%= f.submit "Save Route", class: "btn btn-success" %>
+  <% end %>
+
 
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
@@ -43,7 +48,6 @@
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     
     geocoder = new google.maps.Geocoder();
-    var latlng = new google.maps.LatLng(40.730885,-73.997383);
 
     // Create a renderer for directions and bind it to the map.
     var rendererOptions = { 
@@ -145,8 +149,12 @@
       bounds: defaultBounds
     };
 
+
   var input = document.getElementById('autofill');
   autocomplete = new google.maps.places.Autocomplete(input, options);
+
+  var input2 = document.getElementById('autofill2');
+  autocomplete = new google.maps.places.Autocomplete(input2, options);
 
 
   // ===========================================================================
