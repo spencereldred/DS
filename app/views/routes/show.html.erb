@@ -80,7 +80,7 @@
   //     var content = 'Error: Your browser doesn\'t support geolocation.';
   //   }
     
-  //   PROMPT FOR STARTING LOCATION IN THIS CASE
+  //   //PROMPT FOR STARTING LOCATION IN THIS CASE
   //   var options = {
   //     map: map,
   //     position: new google.maps.LatLng(60, 105),
@@ -96,10 +96,10 @@
   function initialize() {
     // Instantiate a directions service.
     // Create a map and center it on Manhattan.
-    var jackie = new google.maps.LatLng(40.7711329, -73.9741874);
+   
     var mapOptions = {
       zoom: 12,
-      center: jackie
+
     }
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
@@ -112,10 +112,10 @@
     // Instantiate an info window to hold step text.
     stepDisplay = new google.maps.InfoWindow();
   }
-  
+
   function calcRoute() {
-  var start = new google.maps.LatLng(40.7711329, -73.9741874);
-  var end = new google.maps.LatLng(40.735657, -74.172367);
+  var start = gon.starting_point;
+  var end = gon.end_point;
   var request = {
       origin:start,
       destination:end,
@@ -153,7 +153,8 @@
       stepDisplay.open(map, marker);
     });
   }
-    // ===========================================================================
+
+  // ===========================================================================
 
   google.maps.event.addDomListener(window, 'load', initialize);
   calcRoute();
