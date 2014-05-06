@@ -15,8 +15,6 @@
 //= require_tree .
 
 
-
-
 // geocoder = new google.maps.Geocoder();
 
 // function getCoordinates ( address, callback ) {
