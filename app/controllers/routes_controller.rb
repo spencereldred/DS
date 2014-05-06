@@ -20,6 +20,8 @@ class RoutesController < ApplicationController
   def show
     @route = current_user.routes.find(params[:id])
     @stations = @route.stations
+    gon.starting_point = @route.starting_point
+    gon.end_point = @route.end_point
     # render :show
   end
 
