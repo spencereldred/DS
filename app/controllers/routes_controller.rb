@@ -12,6 +12,13 @@ class RoutesController < ApplicationController
     @route = Route.new
   end
 
+  def preview
+    @route = Route.new(route_params)
+    @stations = @route.stations
+    gon.starting_point = @route.starting_point
+    gon.end_point = @route.end_point
+  end  
+
   def create
     route = current_user.routes.create route_params
     redirect_to(route)

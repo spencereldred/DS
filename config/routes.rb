@@ -1,6 +1,8 @@
 TsetseApp::Application.routes.draw do
   resources :users, :routes, :stations, :sessions
 
+  post '/route_preview', to: 'routes#preview'
+
   root to: "routes#index"
 
   get '/signup', to: 'users#new'
