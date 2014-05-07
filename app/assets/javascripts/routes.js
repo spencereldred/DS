@@ -21,6 +21,28 @@ $( window ).load(function() {
     
     geocoder = new google.maps.Geocoder();
 
+    
+// // single marker example
+    var stationLatlng = new google.maps.LatLng(37.111363,-121.016625);
+    var marker = new google.maps.Marker({
+      position: stationLatlng,
+      map: map,
+      title: 'gas'
+    }); 
+
+  // iterates through station markers 
+  // for (i = 0; i < gon.station.length; i++) {
+  //   var marker = new google.maps.Marker({
+  //     position: new google.maps.LatLng(gon.station[i]["latitude"],gon.station[i]["longitude"]),
+  //     draggable:false,
+  //     animation: google.maps.Animation.DROP,
+  //     // icon: image,
+  //     map: map,
+  //     title:"gas"
+  //   });  
+  // };
+
+
     // Create a renderer for directions and bind it to the map.
     var rendererOptions = { 
       map: map
@@ -74,11 +96,34 @@ $( window ).load(function() {
     };
     
     directionsService.route(request, function(response, status) {
+
       if (status == google.maps.DirectionsStatus.OK) {
         directionsDisplay.setDirections(response);
       }
     });
   }
+// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
+
+// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
+// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
+
+// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
+// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
+
+// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
+// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
+
+
+// PAUSE CONSOLE HERE ---- response.routes[0].overview_path 
+// iterate through dataset --->  has path 
+// response.routes[0].overview_path[1] ===== 
+// response.routes[0].overview_path[5].k   ==>   38.36435
+// response.routes[0].overview_path[5].A   ==>   -121.96449000000001
+
+// response.routes[0].legs[0].distance => Object {text: "3,300 mi", value: 5311374}
+// response.routes[0].legs[0].duration => Object {text: "2 days 0 hours", value: 172542}
+
+
 
   // function showSteps(directionResult) {
   //   // For each step, place a marker, and add the text to the marker's
@@ -107,8 +152,6 @@ $( window ).load(function() {
   // }
 
 
-
-
   // ===========================================================================
 
   //get the HTML input element for autocomplete search box
@@ -124,4 +167,5 @@ $( window ).load(function() {
 
   // ===========================================================================
   initialize_google_map();
+  
 });

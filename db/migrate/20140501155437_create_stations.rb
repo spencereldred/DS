@@ -12,6 +12,7 @@ class CreateStations < ActiveRecord::Migration
       t.float :premium
       t.float :diesel
       t.integer :store_num
+      t.date :last_updated
 
       t.timestamps
     end

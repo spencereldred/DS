@@ -53,3 +53,5 @@ class RoutesController < ApplicationController
       params.require(:route).permit(:starting_point, :end_point)
     end
 end
+
+

@@ -11,11 +11,13 @@ before_filter :signed_in_user, only: [:index, :create, :new, :edit, :update, :de
 
   def create
     station = Station.create(station_params)
+    @station.save
     redirect_to station
   end
 
   def show
     @station = Station.find(params[:id])
+    gon.station = @station
   end
 
   def edit
@@ -36,6 +38,8 @@ before_filter :signed_in_user, only: [:index, :create, :new, :edit, :update, :de
 
   private
     def station_params
-      params.require(:station).permit(:brand, :latitude, :longitude, :state, :city, :highway_exit, :unleaded, :midgrade, :premium, :diesel, :store_num)
+      params.require(:station).permit(:brand, :address, :latitude, :longitude, :state, :city, :highway_exit, :unleaded, :midgrade, :premium, :diesel, :last_updated, :route_id, :store_num)
     end
 end
+
+
