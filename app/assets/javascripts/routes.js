@@ -134,8 +134,6 @@ $( window ).load(function() {
                         // push into array (closest results[]) 
                         // exit loops, then sort closest_results by price.
                         //   
-
-
                           var marker = new google.maps.Marker({
                             position: new google.maps.LatLng(gon.station[i]["latitude"],gon.station[i]["longitude"]),
                             draggable:false,
@@ -147,7 +145,7 @@ $( window ).load(function() {
                            // show info window when marker is clicked
                          
                         // alert(gon.station[i]["diesel"]);
-                        var contentString = "<p>" + gon.station[i]["diesel"]+"</p>"
+                        var contentString = "<p>Diesel: $" + gon.station[i]["diesel"]+"</p>"
                         addInfoWindowListener(marker, contentString);
                          
 

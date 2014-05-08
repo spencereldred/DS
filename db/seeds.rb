@@ -52,19 +52,42 @@ stations = Station.create([
 		store_num: "448", unleaded: "3.86", midgrade: "3.96", premium: "4.02", diesel: "3.96", last_updated: ""},
 
 		{company: "Loves", latitude: "44.045823", longitude: "-116.977143", address: "", city: "Ontario", state: "OR", highway_exit: "I-84, Exit 374", 
-		store_num: "372", unleaded: "$3.46", midgrade: "$3.56", premium: "$3.66", diesel: "$3.59", last_updated: ""},
+		store_num: "372", unleaded: "3.46", midgrade: "3.56", premium: "3.66", diesel: "3.59", last_updated: ""},
 
 		{company: "Loves", latitude: "43.150503", longitude: "-123.367895", address: "", city: "Roseburg", state: "OR", highway_exit: "I-5, Exit 119", 
-		store_num: "312", unleaded: "$3.78", midgrade: "$3.88", premium: "$3.98", diesel: "$3.55", last_updated: ""},
+		store_num: "312", unleaded: "3.78", midgrade: "3.88", premium: "3.98", diesel: "3.55", last_updated: ""},
 
 		{company: "Loves", latitude: "45.5436123", longitude: "-122.391721", address: "", city: "Troutdale", state: "OR", highway_exit: "I-84, Exit 17", 
-		store_num: "449", unleaded: "$3.70", midgrade: "$3.80", premium: "$3.90", diesel: "$3.52", last_updated: ""},	
+		store_num: "449", unleaded: "3.70", midgrade: "3.80", premium: "3.90", diesel: "3.52", last_updated: ""},	
 
 		{company: "Loves", latitude: "34.776835", longitude: "-96.669484", address: "", city: "Ada", state: "OK", highway_exit: "", 
-		store_num: "52", unleaded: "$3.48", midgrade: "$3.60", premium: "$3.63", diesel: "$3.64", last_updated: ""},
+		store_num: "52", unleaded: "3.48", midgrade: "3.60", premium: "3.63", diesel: "3.64", last_updated: ""},
+
+		{company: "Loves", latitude: "34.367333", longitude: "-86.89353", address: "", city: "Falkville", state: "AL", highway_exit: "Falkville", 
+		store_num: "381", unleaded: "3.50", midgrade: "3.60", premium: "3.70", diesel: "3.85", last_updated: ""},
+
+		{company: "Loves", latitude: "33.790777", longitude: "-87.241662", address: "", city: "Jasper", state: "AL", highway_exit: "Hwy 78, Exit 65", 
+		store_num: "466", unleaded: "3.50", midgrade: "3.60", premium: "3.70", diesel: "3.85", last_updated: ""},	
+
+		{company: "Loves", latitude: "30.654386", longitude: "-87.759422", address: "", city: "Loxley", state: "AL", highway_exit: "I-10, Exit 44", 
+		store_num: "206", unleaded: "3.46", midgrade: "3.56", premium: "3.66", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "33.279526", longitude: "-87.09762", address: "", city: "McCalla", state: "AL", highway_exit: "I-20, Exit 100", 
+		store_num: "227", unleaded: "3.50", midgrade: "3.60", premium: "3.70", diesel: "3.66", last_updated: ""},
+
+		{company: "Loves", latitude: "33.577002", longitude: "-86.477205", address: "", city: "Moody", state: "AL", highway_exit: "I-20, Exit 147", 
+		store_num: "530", unleaded: "3.46", midgrade: "3.56", premium: "3.66", diesel: "3.85", last_updated: ""},	
+
+		{company: "Loves", latitude: "33.9332605", longitude: "-86.1912275", address: "", city: "Steele", state: "AL", highway_exit: "I-59, Exit 174", 
+		store_num: "304", unleaded: "3.46", midgrade: "3.56", premium: "3.66", diesel: "3.69", last_updated: ""},
+
+		{company: "Loves", latitude: "31.962359", longitude: "-110.3457588", address: "", city: "Benson", state: "AZ", highway_exit: "I-10, Exit 302", 
+		store_num: "460", unleaded: "3.46", midgrade: "3.56", premium: "3.66", diesel: "3.85", last_updated: ""},	
+
+		{company: "Loves", latitude: "33.431284", longitude: "-112.591725", address: "", city: "Buckeye", state: "AZ", highway_exit: "I-10, Exit 114", 
+		store_num: "280", unleaded: "3.50", midgrade: "3.60", premium: "3.70", diesel: "3.83", last_updated: ""},
 
 # =======================================================
-
 
 
 ])
