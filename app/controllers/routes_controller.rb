@@ -14,9 +14,15 @@ class RoutesController < ApplicationController
 
   def preview
     @route = Route.new(route_params)
-    @stations = @route.stations
+    # @stations = @route.stations
     gon.starting_point = @route.starting_point
     gon.end_point = @route.end_point
+    @station = Station.all
+    gon.station = @station
+
+    # results = Typhoeus.get("http://devapi.mygasfeed.com/stations/radius/37.111363/-121.01662/49/diesel/price/rfej9napna.json?callback=?")
+    # gas_man = JSON.parse(results.body)
+    # binding.pry
   end  
 
   def create
@@ -26,7 +32,7 @@ class RoutesController < ApplicationController
 
   def show
     @route = current_user.routes.find(params[:id])
-    @stations = @route.stations
+    # @stations = @route.stations
     gon.starting_point = @route.starting_point
     gon.end_point = @route.end_point
     # render :show

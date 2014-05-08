@@ -3,6 +3,7 @@ class CreateStations < ActiveRecord::Migration
     create_table :stations do |t|
       t.float :latitude
       t.float :longitude
+      t.string :company
       t.string :address
       t.string :state
       t.string :city

@@ -23,24 +23,25 @@ $( window ).load(function() {
 
     
 // // single marker example
-    var stationLatlng = new google.maps.LatLng(37.111363,-121.016625);
-    var marker = new google.maps.Marker({
-      position: stationLatlng,
-      map: map,
-      title: 'gas'
-    }); 
+//     var stationLatlng = new google.maps.LatLng(37.111363,-121.016625);
+//     var marker = new google.maps.Marker({
+//       position: stationLatlng,
+//       map: map,
+//       title: 'gas'
+//     }); 
 
-  // iterates through station markers 
-  // for (i = 0; i < gon.station.length; i++) {
+  // // iterates through station markers 
+  // for (var i = 0; i < gon.station.length; i++) {
   //   var marker = new google.maps.Marker({
   //     position: new google.maps.LatLng(gon.station[i]["latitude"],gon.station[i]["longitude"]),
   //     draggable:false,
   //     animation: google.maps.Animation.DROP,
-  //     // icon: image,
+  //     // icn: "http://www.route40.net/images/gas.png",
+  //     icon: "http://i.imgur.com/EXcfTEd.jpg",
   //     map: map,
-  //     title:"gas"
+  //     title: "gas"
   //   });  
-  // };
+  // }
 
 
     // Create a renderer for directions and bind it to the map.
@@ -58,7 +59,6 @@ $( window ).load(function() {
     var defaultBounds = new google.maps.LatLngBounds(
       new google.maps.LatLng(25.641526, -125.947266),
       new google.maps.LatLng(50.625073, -64.599609));
-
     var options = {
       bounds: defaultBounds
     };
@@ -68,6 +68,7 @@ $( window ).load(function() {
     new google.maps.places.Autocomplete(document.getElementById('end_point'), options);
   }
 
+  // geolocation function (browser/GPS sensor)
   function geoLocate() { 
     if(navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(function(position) {
@@ -98,7 +99,40 @@ $( window ).load(function() {
     directionsService.route(request, function(response, status) {
 
       if (status == google.maps.DirectionsStatus.OK) {
+        // Call a "addStations function with the map and the overview array"
         directionsDisplay.setDirections(response);
+
+                // BELOW WILL GO IN THE GOOGLE API RESPONSE
+                for (var i = 0; i < gon.station.length; i++) {
+                  for (var j = 0; j < (response.routes[0].overview_path.length); j++)  {
+                      var latitude_distance = ((response.routes[0].overview_path[j].k) - (gon.station[i]["latitude"]));
+                      var longitude_distance =((response.routes[0].overview_path[j].A) - (gon.station[i]["longitude"]));
+                      var distance = Math.sqrt((latitude_distance*latitude_distance) + (longitude_distance*longitude_distance));
+                      if (distance < 1) {
+                        console.log(distance);
+                        //PUT VAR MARKER
+                          var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(gon.station[i]["latitude"],gon.station[i]["longitude"]),
+                            draggable:false,
+                            animation: google.maps.Animation.DROP,
+                            icon: "http://i.imgur.com/EXcfTEd.jpg",
+                            map: map,
+                            title:"gas"
+                          });    // closes var marker
+                      }     // closes if distance < 1
+                  }   // closes for j
+                } // closes for i
+
+                // show info window when marker is clicked
+                // var infoWindowOptions = {
+                //   content: "guns dont kill people i kill people"
+                // };
+
+                // var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
+                // google.maps.event.addListener(marker,'click',function(event){
+                //   infoWindow.open(map, marker);
+                // });
+
       }
     });
   }
@@ -107,11 +141,6 @@ $( window ).load(function() {
 // ============ !!!!!!!!!!!!! ================ ?????????????? ====================
 // ============ !!!!!!!!!!!!! ================ ?????????????? ====================
 
-// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
-// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
-
-// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
-// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
 
 
 // PAUSE CONSOLE HERE ---- response.routes[0].overview_path 
@@ -151,14 +180,6 @@ $( window ).load(function() {
   //   });
   // }
 
-
-  // ===========================================================================
-
-  //get the HTML input element for autocomplete search box
-  // var input = document.getElementById("pac-input");
-  // map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-
-
   // ===========================================================================
 
   //google.maps.event.addDomListener(window, 'load', initialize);
@@ -167,5 +188,5 @@ $( window ).load(function() {
 
   // ===========================================================================
   initialize_google_map();
-  
+
 });

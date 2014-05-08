@@ -39,9 +39,6 @@ stations = Station.create([
 		{company: "Loves", latitude: "36.180909", longitude: "-119.330122", address: "", city: "Tulare", state: "CA", highway_exit: "Hwy 99, Exit Paige Ave.", 
 		store_num: "382", unleaded: "4.00", midgrade: "4.10", premium: "4.20", diesel: "4.03", last_updated: ""},
 
-		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
-		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
-
 		{company: "Loves", latitude: "47.007647", longitude: "-120.585862", address: "", city: "Ellensburg", state: "WA", highway_exit: "I-90, Exit 106", 
 		store_num: "413", unleaded: "3.76", midgrade: "3.86", premium: "3.96", diesel: "3.99", last_updated: ""},
 
@@ -52,7 +49,34 @@ stations = Station.create([
 		store_num: "514", unleaded: "3.64", midgrade: "3.74", premium: "3.84", diesel: "3.99", last_updated: ""},
 
 		{company: "Loves", latitude: "47.245328", longitude: "-122.384434", address: "", city: "Tacoma", state: "WA", highway_exit: "I-5, Exit 136", 
-		store_num: "3.86", unleaded: "", midgrade: "3.96", premium: "4.02", diesel: "3.99", last_updated: ""},
+		store_num: "448", unleaded: "3.86", midgrade: "3.96", premium: "4.02", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "44.045823", longitude: "-116.977143", address: "", city: "Ontario", state: "OR", highway_exit: "I-84, Exit 374", 
+		store_num: "372", unleaded: "$3.46", midgrade: "$3.56", premium: "$3.66", diesel: "$3.59", last_updated: ""},
+
+		{company: "Loves", latitude: "43.150503", longitude: "-123.367895", address: "", city: "Roseburg", state: "OR", highway_exit: "I-5, Exit 119", 
+		store_num: "312", unleaded: "$3.78", midgrade: "$3.88", premium: "$3.98", diesel: "$3.55", last_updated: ""},
+
+		{company: "Loves", latitude: "45.5436123", longitude: "-122.391721", address: "", city: "Troutdale", state: "OR", highway_exit: "I-84, Exit 17", 
+		store_num: "449", unleaded: "$3.70", midgrade: "$3.80", premium: "$3.90", diesel: "$3.52", last_updated: ""},	
+
+		{company: "Loves", latitude: "34.776835", longitude: "-96.669484", address: "", city: "Ada", state: "OK", highway_exit: "", 
+		store_num: "52", unleaded: "$3.48", midgrade: "$3.60", premium: "$3.63", diesel: "$3.64", last_updated: ""},
+
+		{company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},	
+
+		{company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},	
 
 # =======================================================
 

@@ -3,6 +3,8 @@ before_filter :signed_in_user, only: [:index, :create, :new, :edit, :update, :de
 
   def index
     @station = Station.all
+    gon.station = @station
+    binding.pry
   end
 
   def new
@@ -17,7 +19,7 @@ before_filter :signed_in_user, only: [:index, :create, :new, :edit, :update, :de
 
   def show
     @station = Station.find(params[:id])
-    gon.station = @station
+    # gon.station = @station
   end
 
   def edit
