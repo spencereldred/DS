@@ -1,0 +1,12 @@
+	<%= form_for @route, url: route_preview_path do |f| %>
+	  <%= f.hidden_field :starting_point, :id => "starting_point"%>	
+	  <br>
+	  <%= f.label "Destination:" %>
+	  <%= f.text_field :end_point, :autofocus => true, :id => "new_end_point", :placeholder => "Enter city of address"%>
+	  <br>
+
+	  <p><p>
+	  <%= f.submit "Submit", class: "btn btn-primary" %>
+	<% end %>
+
+

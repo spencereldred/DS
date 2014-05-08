@@ -1,9 +1,8 @@
   
-<%= render :partial => 'form' %>
+<%= render :partial => 'preview_form' %>
   <%= form_for @route do |f| %>
     <%= f.hidden_field :starting_point%>  
     <%= f.hidden_field :end_point%>
-    <%= f.submit "Save Route", class: "btn btn-success" %>
   <% end %>
 
 

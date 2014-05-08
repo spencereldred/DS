@@ -1,0 +1,13 @@
+	<%= form_for @route do |f| %>
+		<%= f.label :starting_point%>
+	  <%= f.text_field :starting_point, :id => "starting_point"%>	
+	  <br>
+	  <%= f.label "Destination:" %>
+	  <%= f.text_field :end_point, :autofocus => true, :id => "end_point", :placeholder => "Enter city of address"%>
+	  <br>
+
+	  <p><p>
+	  <%= f.submit "Save", class: "btn btn-primary" %>
+	<% end %>
+
+

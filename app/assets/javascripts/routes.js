@@ -66,6 +66,8 @@ $( window ).load(function() {
     // Auto complete
     new google.maps.places.Autocomplete(document.getElementById('starting_point'), options);
     new google.maps.places.Autocomplete(document.getElementById('end_point'), options);
+    // new google.maps.places.Autocomplete(document.getElementById('new_end_point'), options);
+
   }
 
   // geolocation function (browser/GPS sensor)
@@ -119,14 +121,18 @@ $( window ).load(function() {
                             title:"gas"
                           });    // closes var marker
                            // show info window when marker is clicked
+                         
+                          var contentString = "" + gon.station[i]["diesel"]
                           var infoWindowOptions = {
-                            content: "guns dont kill people i kill people"
+                            content: contentString
                           };
 
                           var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
-                          google.maps.event.addListener(marker,'click',function(event){
+                          google.maps.event.addListener(marker,'click',function(){
                             infoWindow.open(map, this);
                           });
+
+
                       }     // closes if distance < 1
                   }   // closes for j
                 } // closes for i
