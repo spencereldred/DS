@@ -108,9 +108,8 @@ $( window ).load(function() {
                       var latitude_distance = ((response.routes[0].overview_path[j].k) - (gon.station[i]["latitude"]));
                       var longitude_distance =((response.routes[0].overview_path[j].A) - (gon.station[i]["longitude"]));
                       var distance = Math.sqrt((latitude_distance*latitude_distance) + (longitude_distance*longitude_distance));
-                      if (distance < 1) {
+                      if (distance < .25) {
                         console.log(distance);
-                        //PUT VAR MARKER
                           var marker = new google.maps.Marker({
                             position: new google.maps.LatLng(gon.station[i]["latitude"],gon.station[i]["longitude"]),
                             draggable:false,
@@ -119,39 +118,25 @@ $( window ).load(function() {
                             map: map,
                             title:"gas"
                           });    // closes var marker
+                           // show info window when marker is clicked
+                          var infoWindowOptions = {
+                            content: "guns dont kill people i kill people"
+                          };
+
+                          var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
+                          google.maps.event.addListener(marker,'click',function(event){
+                            infoWindow.open(map, this);
+                          });
                       }     // closes if distance < 1
                   }   // closes for j
                 } // closes for i
-
-                // show info window when marker is clicked
-                // var infoWindowOptions = {
-                //   content: "guns dont kill people i kill people"
-                // };
-
-                // var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
-                // google.maps.event.addListener(marker,'click',function(event){
-                //   infoWindow.open(map, marker);
-                // });
-
       }
     });
   }
 // ============ !!!!!!!!!!!!! ================ ?????????????? ====================
 
-// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
-// ============ !!!!!!!!!!!!! ================ ?????????????? ====================
-
-
-
-// PAUSE CONSOLE HERE ---- response.routes[0].overview_path 
-// iterate through dataset --->  has path 
-// response.routes[0].overview_path[1] ===== 
-// response.routes[0].overview_path[5].k   ==>   38.36435
-// response.routes[0].overview_path[5].A   ==>   -121.96449000000001
-
 // response.routes[0].legs[0].distance => Object {text: "3,300 mi", value: 5311374}
 // response.routes[0].legs[0].duration => Object {text: "2 days 0 hours", value: 172542}
-
 
 
   // function showSteps(directionResult) {

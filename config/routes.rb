@@ -3,7 +3,7 @@ TsetseApp::Application.routes.draw do
 
   post '/route_preview', to: 'routes#preview'
 
-  root to: "routes#index"
+  root to: "routes#new"
 
   get '/signup', to: 'users#new'
   delete '/signout', to: 'sessions#destroy'
