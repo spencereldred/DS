@@ -22,7 +22,7 @@ stations = Station.create([
 		store_num: "207", unleaded: "4.16", midgrade: "4.26", premium: "4.36", diesel: "4.13", last_updated: ""},
 
 		{company: "Loves", latitude: "39.907601", longitude: "-122.196352", address: "", city: "Corning", state: "CA", highway_exit: "I-5, Exit 630", 
-		store_num: "410", unleaded: "4.00", midgrade: "4.10", premium: "4.20", diesel: "3.99", last_updated: ""},
+		store_num: "410", unleaded: "4.00", midgrade: "4.10", premium: "4.20", diesel: "4.01", last_updated: ""},
 	
 		{company: "Loves", latitude: "35.616981", longitude: "-119.65888", address: "", city: "Lost Hills", state: "CA", highway_exit: "I-5, Exit 278", 
 		store_num: "230", unleaded: "4.00", midgrade: "4.10", premium: "4.20", diesel: "4.13", last_updated: ""},
@@ -40,16 +40,16 @@ stations = Station.create([
 		store_num: "382", unleaded: "4.00", midgrade: "4.10", premium: "4.20", diesel: "4.03", last_updated: ""},
 
 		{company: "Loves", latitude: "47.007647", longitude: "-120.585862", address: "", city: "Ellensburg", state: "WA", highway_exit: "I-90, Exit 106", 
-		store_num: "413", unleaded: "3.76", midgrade: "3.86", premium: "3.96", diesel: "3.99", last_updated: ""},
+		store_num: "413", unleaded: "3.76", midgrade: "3.86", premium: "3.96", diesel: "3.98", last_updated: ""},
 
 		{company: "Loves", latitude: "46.6032059", longitude: "-122.908266", address: "", city: "Napavine", state: "WA", highway_exit: "I-5, Exit 72", 
-		store_num: "454", unleaded: "3.80", midgrade: "3.90", premium: "4.00", diesel: "3.99", last_updated: ""},
+		store_num: "454", unleaded: "3.80", midgrade: "3.90", premium: "4.00", diesel: "3.97", last_updated: ""},
 
 		{company: "Loves", latitude: "47.115893", longitude: "-118.366", address: "", city: "Ritzville", state: "WA", highway_exit: "I-90, Exit 221", 
 		store_num: "514", unleaded: "3.64", midgrade: "3.74", premium: "3.84", diesel: "3.99", last_updated: ""},
 
 		{company: "Loves", latitude: "47.245328", longitude: "-122.384434", address: "", city: "Tacoma", state: "WA", highway_exit: "I-5, Exit 136", 
-		store_num: "448", unleaded: "3.86", midgrade: "3.96", premium: "4.02", diesel: "3.99", last_updated: ""},
+		store_num: "448", unleaded: "3.86", midgrade: "3.96", premium: "4.02", diesel: "3.96", last_updated: ""},
 
 		{company: "Loves", latitude: "44.045823", longitude: "-116.977143", address: "", city: "Ontario", state: "OR", highway_exit: "I-84, Exit 374", 
 		store_num: "372", unleaded: "$3.46", midgrade: "$3.56", premium: "$3.66", diesel: "$3.59", last_updated: ""},
@@ -62,21 +62,6 @@ stations = Station.create([
 
 		{company: "Loves", latitude: "34.776835", longitude: "-96.669484", address: "", city: "Ada", state: "OK", highway_exit: "", 
 		store_num: "52", unleaded: "$3.48", midgrade: "$3.60", premium: "$3.63", diesel: "$3.64", last_updated: ""},
-
-		{company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
-		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
-
-		{company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
-		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},	
-
-		{company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
-		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
-
-		{company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
-		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
-
-		{company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
-		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},	
 
 # =======================================================
 

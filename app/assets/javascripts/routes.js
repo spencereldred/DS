@@ -67,7 +67,7 @@ $( window ).load(function() {
     new google.maps.places.Autocomplete(document.getElementById('starting_point'), options);
     new google.maps.places.Autocomplete(document.getElementById('end_point'), options);
     new google.maps.places.Autocomplete(document.getElementById('new_end_point'), options);
-    
+
 
   }
 
@@ -98,13 +98,31 @@ $( window ).load(function() {
         destination: end,
         travelMode: google.maps.TravelMode.DRIVING
     };
-    
+
     directionsService.route(request, function(response, status) {
 
       if (status == google.maps.DirectionsStatus.OK) {
         // Call a "addStations function with the map and the overview array"
         directionsDisplay.setDirections(response);
 
+                var infoWindow;
+                var addInfoWindowListener = function(marker, contentString) {
+                // contentString = "" + gon.station[i]["diesel"]
+                          var infoWindowOptions = {
+                            content: contentString
+                          };  
+                          console.log(contentString)
+                          google.maps.event.addListener(marker,'click',function(event){
+                            if(!!infoWindow){
+
+                              infoWindow.close();
+                            }
+                            infoWindow = new google.maps.InfoWindow(infoWindowOptions)
+                          
+                            infoWindow.open(map, this);
+                          });
+
+                };
                 // BELOW WILL GO IN THE GOOGLE API RESPONSE
                 for (var i = 0; i < gon.station.length; i++) {
                   for (var j = 0; j < (response.routes[0].overview_path.length); j++)  {
@@ -112,7 +130,12 @@ $( window ).load(function() {
                       var longitude_distance =((response.routes[0].overview_path[j].A) - (gon.station[i]["longitude"]));
                       var distance = Math.sqrt((latitude_distance*latitude_distance) + (longitude_distance*longitude_distance));
                       if (distance < .25) {
-                        console.log(distance);
+                        
+                        // push into array (closest results[]) 
+                        // exit loops, then sort closest_results by price.
+                        //   
+
+
                           var marker = new google.maps.Marker({
                             position: new google.maps.LatLng(gon.station[i]["latitude"],gon.station[i]["longitude"]),
                             draggable:false,
@@ -123,15 +146,10 @@ $( window ).load(function() {
                           });    // closes var marker
                            // show info window when marker is clicked
                          
-                          var contentString = "" + gon.station[i]["diesel"]
-                          var infoWindowOptions = {
-                            content: contentString
-                          };
-
-                          var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
-                          google.maps.event.addListener(marker,'click',function(){
-                            infoWindow.open(map, this);
-                          });
+                        // alert(gon.station[i]["diesel"]);
+                        var contentString = "<p>" + gon.station[i]["diesel"]+"</p>"
+                        addInfoWindowListener(marker, contentString);
+                         
 
                       }     // closes if distance < 1
                   }   // closes for j
