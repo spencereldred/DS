@@ -10,17 +10,131 @@
 
 */
 
-
-.new_formblock{
+#new_formblock {
 	text-align: center;
 	display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.new_destination{
+#new_destination{
+	color: #af1e2d;
 	text-align: center;
 	display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+}
+
+
+
+/*
+random_number = rand(7)
+<% if random_number == 1 %> 
+background-image:url("http://www.mrwallpaper.com/wallpapers/Highway-Landscape.jpg");
+
+<% else_if random_number ==2 %> 
+background-image:url("http://www.buffalogov.org/files/Images/highway4.JPG");
+
+<% else_if random_number ==3 %> 
+background-image:url("http://upload.wikimedia.org/wikipedia/commons/1/1e/Highway_401_by_401-DVP.jpg");
+
+<% else_if random_number ==4 %> 
+background-image:url("http://upload.wikimedia.org/wikipedia/commons/1/1e/Highway_401_by_401-DVP.jpg");
+
+<% else_if random_number ==5 %> 
+background-image:url("http://aplaceforthings.com/wp-content/uploads/2013/02/Mountain-Highway-2-1140x700.jpg");
+
+<% else_if random_number ==6 %> 
+background-image:url("http://wallpoper.com/images/00/44/73/34/german-highway_00447334.jpg");  
+
+<% else_if random_number ==7 %> 
+background-image:url("http://superiortrisports.files.wordpress.com/2012/02/istock_mojave-desert-highway.jpg");  
+
+<% end_if %> 
+
+/**/
+.navbar {
+	height: 90px;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.navbar-header{
+	height: 90px;
+	padding-top: 19px;
+	font-size: 18px;
+	text-align: center;
+	display: inline-block;
+}
+
+.navbar-brand {
+	position: relative;
+	margin-top: -27px;
+
+}
+
+body.turd {
+background: url("http://www.mrwallpaper.com/wallpapers/Highway-Landscape.jpg");
+margin: 0 auto;
+position: relative;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+max-height:100%;
+max-width:100%;
+}
+
+body.index_body {
+background-color: #fcf1e8;
+margin: 0 auto;
+position: relative;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+max-height:100%;
+max-width:100%;
+}
+
+body.preview_body {
+background-color: #726e6a;
+margin: 0 auto;
+position: relative;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+max-height:100%;
+max-width:100%;
+}
+
+#sign_in_page {
+	color: #af1e2d;
+	text-align: center;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sign_up_page {
+	color: #af1e2d;
+	text-align: center;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shark_header {
+	font: 20px;
+	text-align: center;
+	display: block;
+  margin-left: 150px;
+}
+

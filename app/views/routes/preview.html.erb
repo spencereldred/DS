@@ -1,30 +1,29 @@
-  
-<%= render :partial => 'preview_form' %>
-  <%= form_for @route do |f| %>
-    <%= f.hidden_field :starting_point%>  
-    <%= f.hidden_field :end_point%>
-  <% end %>
+<body class="preview_body"> 
+  <%= render :partial => 'preview_form' %>
+    <%= form_for @route do |f| %>
+      <%= f.hidden_field :starting_point%>  
+      <%= f.hidden_field :end_point%>
+    <% end %>
 
 
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-  <meta charset="utf-8">
-  <style>
-    html, body, #map-canvas {
-      height: 100%;
-      margin: 10px;
-      padding: 30px
-    }
-  </style>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 10px;
+        padding: 30px
+      }
+    </style>
 
-<div class="row">
-  <div class="col-md-5 col-sm-5">
-  </div>
-</div> 
+  <div class="row">
+    <div class="col-md-5 col-sm-5">
+    </div>
+  </div> 
 
 
-<!-- ADD MAP OF ROUTE BELOW HERE -->
-  <div id="map-canvas"></div>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&libraries=places" type="text/javascript"></script>
-
+  <!-- ADD MAP OF ROUTE BELOW HERE -->
+    <div id="map-canvas"></div>
+</div>
 
 

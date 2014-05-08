@@ -66,7 +66,8 @@ $( window ).load(function() {
     // Auto complete
     new google.maps.places.Autocomplete(document.getElementById('starting_point'), options);
     new google.maps.places.Autocomplete(document.getElementById('end_point'), options);
-    // new google.maps.places.Autocomplete(document.getElementById('new_end_point'), options);
+    new google.maps.places.Autocomplete(document.getElementById('new_end_point'), options);
+    
 
   }
 
@@ -131,7 +132,6 @@ $( window ).load(function() {
                           google.maps.event.addListener(marker,'click',function(){
                             infoWindow.open(map, this);
                           });
-
 
                       }     // closes if distance < 1
                   }   // closes for j

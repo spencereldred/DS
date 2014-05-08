@@ -1,12 +1,17 @@
+<body class="index_body">	
+	<br>
+	<br>
+	<br>
+	<br>
+	<% @routes.each do |route| %>
+	  <div class="row">
+	     <div class="col-md-4 col-sm-4">
+	      <p class="lead"><%= route.starting_point %> to <%= link_to(route.end_point, route) %>
+	    </div>
+	    <div class="col-md-8 col-sm-8">
+	    </div>
+	  </div>
+	<% end %>
 
-<% @routes.each do |route| %>
-  <div class="row">
-     <div class="col-md-4 col-sm-4">
-      <p class="lead"><%= link_to(route.starting_point, route) %> to <%= link_to(route.end_point, route) %>
-    </div>
-    <div class="col-md-8 col-sm-8">
-    </div>
-  </div>
-<% end %>
-
+</div>
 
