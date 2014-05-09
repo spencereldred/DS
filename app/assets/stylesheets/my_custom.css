@@ -30,7 +30,9 @@
 	font-size: 50px;
 	font-weight: bold;
 	font-family: 'Open Sans Condensed', sans-serif;
-	color: #e80b3a;
+	color: #f7db1c;
+	/*color: #f7ba04;*/
+	/*color: #e80b3a;*/
 	/*color: #af1e2d;*/
 	text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 1px black;
 	/*color: #050af2;*/
@@ -162,12 +164,18 @@ max-width:100%;
   margin-right: auto;
 }
 
-.shark_header {
-	font: 20px;
-	text-align: center;
+#shark_header {
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #af1e2d;
+	/*color: #f7ba04;*/
+	/*text-shadow: 1px 0 #003f87, 1px 0 #003f87, 1px 0 #003f87, 1px 0 #003f87;*/
+	/*color: #003f87;*/
 	display: block;
   /*margin-left: 150px;*/
-  padding-left:3px;
+	padding-top: 0px;
+  padding-left: 111px;
 }
 
 #new_header {
@@ -193,8 +201,8 @@ body.log_in_turd {
 
 body.log_in_turd2 {
 	/*background: url("http://www.buffalogov.org/files/Images/highway4.JPG");*/
-	/*background: url("http://upload.wikimedia.org/wikipedia/commons/1/1e/Highway_401_by_401-DVP.jpg");*/
-	background: url("http://aplaceforthings.com/wp-content/uploads/2013/02/Mountain-Highway-2-1140x700.jpg");
+	background: url("http://upload.wikimedia.org/wikipedia/commons/1/1e/Highway_401_by_401-DVP.jpg");
+	/*background: url("http://aplaceforthings.com/wp-content/uploads/2013/02/Mountain-Highway-2-1140x700.jpg");*/
 	/*background: url("http://wallpoper.com/images/00/44/73/34/german-highway_00447334.jpg");*/
 	/*background: url("http://superiortrisports.files.wordpress.com/2012/02/istock_mojave-desert-highway.jpg");*/
 	margin: 0 auto;
