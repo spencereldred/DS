@@ -123,6 +123,8 @@ $( window ).load(function() {
                           });
 
                 };
+
+                var closeResults = [];
                 // BELOW WILL GO IN THE GOOGLE API RESPONSE
                 for (var i = 0; i < gon.station.length; i++) {
                   for (var j = 0; j < (response.routes[0].overview_path.length); j++)  {
@@ -130,28 +132,41 @@ $( window ).load(function() {
                       var longitude_distance =((response.routes[0].overview_path[j].A) - (gon.station[i]["longitude"]));
                       var distance = Math.sqrt((latitude_distance*latitude_distance) + (longitude_distance*longitude_distance));
                       if (distance < .25) {
-                        
-                        // push into array (closest results[]) 
-                        // exit loops, then sort closest_results by price.
-                        //   
-                          var marker = new google.maps.Marker({
-                            position: new google.maps.LatLng(gon.station[i]["latitude"],gon.station[i]["longitude"]),
-                            draggable:false,
-                            animation: google.maps.Animation.DROP,
-                            icon: "http://i.imgur.com/EXcfTEd.jpg",
-                            map: map,
-                            title:"gas"
-                          });    // closes var marker
-                           // show info window when marker is clicked
-                         
-                        // alert(gon.station[i]["diesel"]);
-                        var contentString = "<p>Diesel: $" + gon.station[i]["diesel"]+"</p>"
-                        addInfoWindowListener(marker, contentString);
-                         
+                          var notDup = true;
+                          for (var index = 0; index < closeResults.length && notDup; index++) {
+                            notDup = closeResults[index].id !== gon.station[i].id;
+                          };
+
+                          if(notDup){
+                            closeResults.push(gon.station[i]);
+                          }
+                          // closes var marker
+                          // show info window when marker is clicked
+                          // alert(gon.station[i]["diesel"]);
 
                       }     // closes if distance < 1
                   }   // closes for j
                 } // closes for i
+
+              closeResults = closeResults.sort(function(stationOne, stationTwo){
+                return stationOne.diesel - stationTwo.diesel;
+              });
+              console.log(closeResults)
+              for (var i = 0; i < 6; i++) {
+                console.log(closeResults[i],i)
+                var marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(closeResults[i]["latitude"],closeResults[i]["longitude"]),
+                  draggable:false,
+                  animation: google.maps.Animation.DROP,
+                  icon: "http://i.imgur.com/EXcfTEd.jpg",
+                  map: map,
+                  title:"gas"
+                }); 
+
+                var contentString = "<p>Diesel: $" + closeResults[i]["diesel"]+"</p>"
+                addInfoWindowListener(marker, contentString);
+              };
+
       }
     });
   }
