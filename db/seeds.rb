@@ -7,13 +7,29 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 stations = Station.create([
-	{company: "Loves", latitude: "32.844151", longitude: "-86.591963", address: "", city: "Clanton", 
-		state: "AL", highway_exit: "I-65, Exit 208", store_num: "368", unleaded: "3.50", midgrade: "3.60",
-		premium: "3.70", diesel: "3.85", last_updated: ""},
+		{company: "Loves", latitude: "32.844151", longitude: "-86.591963", address: "", city: "Clanton", state: "AL", highway_exit: "I-65, Exit 208", 
+		store_num: "368", unleaded: "3.50", midgrade: "3.60", premium: "3.70", diesel: "3.85", last_updated: ""},
 
-		{company: "Loves", latitude: "31.419105", longitude: "-87.00765", address: "", city: "Evergreen", state: "AL", 
-		highway_exit: "I-65, Exit 93", store_num: "225", unleaded: "3.50", midgrade: "3.60", premium: "3.70", 
-		diesel: "3.89", last_updated: ""},
+		{company: "Loves", latitude: "31.419105", longitude: "-87.00765", address: "", city: "Evergreen", state: "AL", highway_exit: "I-65, Exit 93", 
+		store_num: "225", unleaded: "3.50", midgrade: "3.60", premium: "3.70", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "34.367333", longitude: "-86.89353", address: "", city: "Falkville", state: "AL", highway_exit: "", 
+		store_num: "381", unleaded: "", midgrade: "", premium: "", diesel: "3.85", last_updated: ""},
+
+		{company: "Loves", latitude: "33.790777", longitude: "-87.241662", address: "", city: "Jasper", state: "AL", highway_exit: "", 
+		store_num: "466", unleaded: "", midgrade: "", premium: "", diesel: "3.85", last_updated: ""},
+
+		{company: "Loves", latitude: "30.654386", longitude: "-87.759422", address: "", city: "Loxley", state: "AL", highway_exit: "", 
+		store_num: "206", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "33.279526", longitude: "-87.09762", address: "", city: "McCalla", state: "AL", highway_exit: "", 
+		store_num: "227", unleaded: "", midgrade: "", premium: "", diesel: "3.66", last_updated: ""},
+
+		{company: "Loves", latitude: "33.577002", longitude: "-86.477205", address: "", city: "Moody", state: "AL", highway_exit: "", 
+		store_num: "530", unleaded: "", midgrade: "", premium: "", diesel: "3.85", last_updated: ""},
+		
+		{company: "Loves", latitude: "33.9332605", longitude: "-86.1912275", address: "", city: "Steele", state: "AL", highway_exit: "", 
+		store_num: "304", unleaded: "", midgrade: "", premium: "", diesel: "3.69", last_updated: ""},	
 
 		{company: "Loves", latitude: "34.855917", longitude: "-117.090172", address: "", city: "Barstow", state: "CA", highway_exit: "I-15, Exit 178", 
 		store_num: "374", unleaded: "4.06", midgrade: "4.16", premium: "4.26", diesel: "4.09", last_updated: ""},
@@ -87,9 +103,336 @@ stations = Station.create([
 		{company: "Loves", latitude: "33.431284", longitude: "-112.591725", address: "", city: "Buckeye", state: "AZ", highway_exit: "I-10, Exit 114", 
 		store_num: "280", unleaded: "3.50", midgrade: "3.60", premium: "3.70", diesel: "3.83", last_updated: ""},
 
+		{company: "Loves", latitude: "32.80643", longitude: "-111.672093", address: "", city: "Casa Grande", state: "AZ", highway_exit: "", 
+		store_num: "265", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "33.279875", longitude: "-111.962298", address: "", city: "Chandler", state: "AZ", highway_exit: "", 
+		store_num: "328", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "32.94432", longitude: "-112.733253", address: "", city: "Gila Bend", state: "AZ", highway_exit: "", 
+		store_num: "296", unleaded: "", midgrade: "", premium: "", diesel: "3.90", last_updated: ""},
+
+		{company: "Loves", latitude: "34.954751", longitude: "-110.311242", address: "", city: "Joseph City", state: "AZ", highway_exit: "", 
+		store_num: "278", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "35.199162", longitude: "-113.9039", address: "", city: "Kingman", state: "AZ", highway_exit: "", 
+		store_num: "272", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "34.726438", longitude: "-114.31635", address: "", city: "Lake Havasu", state: "AZ", highway_exit: "", 
+		store_num: "386", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "33.657299", longitude: "-114.241226", address: "", city: "Quartzsite", state: "AZ", highway_exit: "", 
+		store_num: "286", unleaded: "", midgrade: "", premium: "", diesel: "3.95", last_updated: ""},
+
+		{company: "Loves", latitude: "32.685922", longitude: "-114.58513", address: "", city: "Yuma", state: "AZ", highway_exit: "", 
+		store_num: "349", unleaded: "", midgrade: "", premium: "", diesel: "3.95", last_updated: ""},
+
+		{company: "Loves", latitude: "34.657214", longitude: "-92.413231", address: "", city: "Little Rock", state: "AR", highway_exit: "", 
+		store_num: "457", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "35.172923", longitude: "-92.743251", address: "", city: "Morrilton", state: "AR", highway_exit: "", 
+		store_num: "267", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "34.786217", longitude: "-92.125573", address: "", city: "N. Little Rock", state: "AR", highway_exit: "", 
+		store_num: "236", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "35.511466", longitude: "-93.822309", address: "", city: "Ozark", state: "AR", highway_exit: "", 
+		store_num: "271", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "34.986489", longitude: "-90.905235", address: "", city: "Palestine", state: "AR", highway_exit: "", 
+		store_num: "275", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "33.828782", longitude: "-93.394759", address: "", city: "Prescott", state: "AR", highway_exit: "", 
+		store_num: "277", unleaded: "", midgrade: "", premium: "", diesel: "3.85", last_updated: ""},
+
+		{company: "Loves", latitude: "35.157747", longitude: "-90.137608", address: "", city: "West Memphis", state: "AR", highway_exit: "", 
+		store_num: "450", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "39.75249", longitude: "-104.43415", address: "", city: "Bennett", state: "CO", highway_exit: "", 
+		store_num: "300", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "38.741986", longitude: "-104.737199", address: "", city: "Fountain", state: "CO", highway_exit: "", 
+		store_num: "357", unleaded: "", midgrade: "", premium: "", diesel: "3.86", last_updated: ""},
+
+		{company: "Loves", latitude: "38.543928", longitude: "-106.934411", address: "", city: "Gunnison", state: "CO", highway_exit: "", 
+		store_num: "7", unleaded: "", midgrade: "", premium: "", diesel: "3.96", last_updated: ""},
+
+		{company: "Loves", latitude: "40.077008", longitude: "-104.649147", address: "", city: "Hudson", state: "CO", highway_exit: "", 
+		store_num: "377", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "37.987695", longitude: "-103.538643", address: "", city: "LaJunta", state: "CO", highway_exit: "", 
+		store_num: "12", unleaded: "", midgrade: "", premium: "", diesel: "3.86", last_updated: ""},
+
+		{company: "Loves", latitude: "38.095707", longitude: "-102.62027", address: "", city: "Lamar", state: "CO", highway_exit: "", 
+		store_num: "23", unleaded: "", midgrade: "", premium: "", diesel: "3.85", last_updated: ""},
+
+		{company: "Loves", latitude: "38.088626", longitude: "-102.616049", address: "", city: "Lamar", state: "CO", highway_exit: "", 
+		store_num: "38", unleaded: "", midgrade: "", premium: "", diesel: "3.86", last_updated: ""},
+
+		{company: "Loves", latitude: "37.578299", longitude: "-106.13721", address: "", city: "Monte Vista", state: "CO", highway_exit: "", 
+		store_num: "30", unleaded: "", midgrade: "", premium: "", diesel: "3.90", last_updated: ""},
+
+		{company: "Loves", latitude: "38.3346342", longitude: "-104.6210127", address: "", city: "Pueblo", state: "CO", highway_exit: "", 
+		store_num: "226", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "37.402798", longitude: "-102.615985", address: "", city: "Springfield", state: "CO", highway_exit: "", 
+		store_num: "37", unleaded: "", midgrade: "", premium: "", diesel: "3.98", last_updated: ""},
+
+		{company: "Loves", latitude: "28.155314", longitude: "-81.800734", address: "", city: "", state: "FL", highway_exit: "", 
+		store_num: "228", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "30.7490241", longitude: "-85.3829513", address: "", city: "", state: "FL", highway_exit: "", 
+		store_num: "453", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "27.4131666", longitude: "-80.3977006", address: "", city: "", state: "FL", highway_exit: "", 
+		store_num: "415", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "30.438", longitude: "-82.9117", address: "", city: "", state: "FL", highway_exit: "", 
+		store_num: "470", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "30.377124", longitude: "-83.297401", address: "", city: "", state: "FL", highway_exit: "", 
+		store_num: "379", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "29.267562", longitude: "-82.1984253", address: "", city: "", state: "FL", highway_exit: "", 
+		store_num: "363", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "29.337979", longitude: "-81.133304", address: "", city: "", state: "FL", highway_exit: "", 
+		store_num: "316", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "31.137752", longitude: "-81.571797", address: "", city: "", state: "GA", highway_exit: "", 
+		store_num: "405", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "32.495759", longitude: "-82.981753", address: "", city: "", state: "GA", highway_exit: "", 
+		store_num: "320", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "34.1188572", longitude: "-84.7431651", address: "", city: "", state: "GA", highway_exit: "", 
+		store_num: "359", unleaded: "", midgrade: "", premium: "", diesel: "3.77", last_updated: ""},
+
+		{company: "Loves", latitude: "33.159438", longitude: "-84.871354", address: "", city: "", state: "GA", highway_exit: "", 
+		store_num: "376", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "33.208091", longitude: "-84.05852", address: "", city: "", state: "GA", highway_exit: "", 
+		store_num: "307", unleaded: "", midgrade: "", premium: "", diesel: "3.95", last_updated: ""},
+
+		{company: "Loves", latitude: "31.960642", longitude: "-81.331522", address: "", city: "", state: "GA", highway_exit: "", 
+		store_num: "338", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "33.514228", longitude: "-82.503612", address: "", city: "", state: "GA", highway_exit: "", 
+		store_num: "354", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "31.4158274", longitude: "-83.5060433", address: "", city: "", state: "GA", highway_exit: "", 
+		store_num: "325", unleaded: "", midgrade: "", premium: "", diesel: "3.95", last_updated: ""},
+
+		{company: "Loves", latitude: "33.691297", longitude: "-85.189547", address: "", city: "", state: "GA", highway_exit: "", 
+		store_num: "311", unleaded: "", midgrade: "", premium: "", diesel: "3.94", last_updated: ""},
+
+		{company: "Loves", latitude: "42.567012", longitude: "-113.73762", address: "", city: "", state: "ID", highway_exit: "", 
+		store_num: "334", unleaded: "", midgrade: "", premium: "", diesel: "4.03", last_updated: ""},
+
+		{company: "Loves", latitude: "43.436962", longitude: "-112.119846", address: "", city: "", state: "ID", highway_exit: "", 
+		store_num: "478", unleaded: "", midgrade: "", premium: "", diesel: "3.94", last_updated: ""},
+
+		{company: "Loves", latitude: "47.711161", longitude: "-117.00409", address: "", city: "", state: "ID", highway_exit: "", 
+		store_num: "301", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "41.1137", longitude: "-88.4153", address: "", city: "", state: "IL", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "38.87324", longitude: "-89.38713", address: "", city: "", state: "IL", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.95", last_updated: ""},
+
+		{company: "Loves", latitude: "38.155469", longitude: "-88.910841", address: "", city: "", state: "IL", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.95", last_updated: ""},
+
+		{company: "Loves", latitude: "41.0709397", longitude: "-87.8686935", address: "", city: "", state: "IL", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.95", last_updated: ""},
+
+		{company: "Loves", latitude: "40.340395", longitude: "-88.760803", address: "", city: "", state: "IL", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "41.294104", longitude: "-89.08575", address: "", city: "", state: "IL", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.85", last_updated: ""},
+
+		{company: "Loves", latitude: "42.455985", longitude: "-88.998069", address: "", city: "", state: "IL", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "41.370086", longitude: "-89.00914", address: "", city: "", state: "IL", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.95", last_updated: ""},
+
+		{company: "Loves", latitude: "39.960959", longitude: "-89.562296", address: "", city: "", state: "IL", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "39.615839", longitude: "-86.478508", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.83", last_updated: ""},
+
+		{company: "Loves", latitude: "41.14253", longitude: "-87.260729", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.87", last_updated: ""},
+
+		{company: "Loves", latitude: "41.561796", longitude: "-87.3566396", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.85", last_updated: ""},
+
+		{company: "Loves", latitude: "38.17337", longitude: "-87.55159", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "40.554335", longitude: "-85.548979", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "38.490873", longitude: "-85.76988", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "39.877254", longitude: "-86.473992", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.83", last_updated: ""},
+
+		{company: "Loves", latitude: "39.870945", longitude: "-84.933264", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.83", last_updated: ""},
+
+		{company: "Loves", latitude: "39.449756", longitude: "-85.626449", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.83", last_updated: ""},
+
+		{company: "Loves", latitude: "39.551539", longitude: "-86.044627", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "39.979492", longitude: "-86.395742", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.89", last_updated: ""},
+
+		{company: "Loves", latitude: "41.613365", longitude: "-93.780718", address: "", city: "", state: "IA", highway_exit: "", 
+		store_num: "411", unleaded: "", midgrade: "", premium: "", diesel: "3.80", last_updated: ""},
+
+		{company: "Loves", latitude: "41.604403", longitude: "-90.623937", address: "", city: "", state: "IA", highway_exit: "", 
+		store_num: "476", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "41.680428", longitude: "-92.999058", address: "", city: "", state: "IA", highway_exit: "", 
+		store_num: "361", unleaded: "", midgrade: "", premium: "", diesel: "3.83", last_updated: ""},
+
+		{company: "Loves", latitude: "42.434652", longitude: "-96.379902", address: "", city: "", state: "IA", highway_exit: "", 
+		store_num: "479", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "37.082717", longitude: "-97.0396", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.90", last_updated: ""},
+
+		{company: "Loves", latitude: "39.397481", longitude: "-101.047874", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.90", last_updated: ""},
+
+		{company: "Loves", latitude: "37.753654", longitude: "-100.028774", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "4.00", last_updated: ""},
+
+		{company: "Loves", latitude: "37.753132", longitude: "-100.011806", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "4.00", last_updated: ""},
+
+		{company: "Loves", latitude: "38.947691", longitude: "-99.5600959", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.84", last_updated: ""},
+
+		{company: "Loves", latitude: "38.360978", longitude: "-98.754033", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.90", last_updated: ""},
+
+		{company: "Loves", latitude: "38.882327", longitude: "-99.317259", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.85", last_updated: ""},
+
+		{company: "Loves", latitude: "37.032373", longitude: "-100.92509", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "4.00", last_updated: ""},
+
+		{company: "Loves", latitude: "39.838867", longitude: "-99.89259", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.90", last_updated: ""},
+
+		{company: "Loves", latitude: "38.5721697", longitude: "-95.2664", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "39.755533", longitude: "-99.318155", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.90", last_updated: ""},
+
+		{company: "Loves", latitude: "37.646163", longitude: "-98.722077", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.90", last_updated: ""},
+
+		{company: "Loves", latitude: "37.980266", longitude: "-101.75035", address: "", city: "", state: "KS", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.98", last_updated: ""},
+
+		{company: "Loves", latitude: "37.003735", longitude: "-88.31864", address: "", city: "", state: "KY", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "36.977491", longitude: "-84.116242", address: "", city: "", state: "KY", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "38.341101", longitude: "-82.941906", address: "", city: "", state: "KY", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "37.201373", longitude: "-85.935198", address: "", city: "", state: "KY", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "37.84322", longitude: "-84.324537", address: "", city: "", state: "KY", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.93", last_updated: ""},
+
+		{company: "Loves", latitude: "37.979467", longitude: "-85.694363", address: "", city: "", state: "KY", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "3.99", last_updated: ""},
+
+		{company: "Loves", latitude: "38.69365", longitude: "-84.938639", address: "", city: "", state: "KY", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "4.01", last_updated: ""},
+
+		{company: "Loves", latitude: "38.152234", longitude: "-85.07025", address: "", city: "", state: "KY", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "4.03", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "IN", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+		{company: "Loves", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
+
+
+
 # =======================================================
 
-
+		# {company: "", latitude: "", longitude: "", address: "", city: "", state: "", highway_exit: "", 
+		# store_num: "", unleaded: "", midgrade: "", premium: "", diesel: "", last_updated: ""},
 ])
 
 

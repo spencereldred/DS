@@ -54,6 +54,12 @@
 	font-size: 20px;
 }
 
+#thx {
+	color: #023c86;
+	font-size: 26px;
+	/*font-weight: bold;*/
+}
+
 /*
 random_number = rand(7)
 <% if random_number == 1 %> 
