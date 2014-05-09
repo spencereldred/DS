@@ -1,7 +1,7 @@
 	<%= form_for @route, url: route_preview_path do |f| %>
 	  <%= f.hidden_field :starting_point, :id => "starting_point"%>	
 	  <br>
-	  <%= f.text_field :end_point, :autofocus => true, :id => "new_end_point", :placeholder => "Enter city or address"%>
+	  <%= f.text_field :end_point, :autofocus => true, :id => "new_end_point", :placeholder => "Enter city or address", :style => "width: 220px; height: 32px;"%>
 	  <br>
 
 	  <p><p>

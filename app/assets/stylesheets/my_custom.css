@@ -121,6 +121,14 @@ max-width:100%;
   margin-right: auto;
 }
 
+.modal-header {
+	text-align: center;
+}
+
+#sign_in_head {
+	color: #af1e2d;
+}
+
 #sign_up_page {
 	color: #af1e2d;
 	text-align: center;
@@ -134,5 +142,9 @@ max-width:100%;
 	text-align: center;
 	display: block;
   margin-left: 150px;
+}
+
+#new_header {
+	font-size: 26px;	
 }
 
