@@ -7,21 +7,28 @@
       padding: 30px
     }
   </style>
-<div>
-  <ul class="nav nav-pills">
-    <li><%= link_to('Edit route', edit_route_path(@route)) %></li>
-    <li><%= link_to('Delete route', @route, :method => :delete, :confirm => 'Are you sure?') %></li>
-    <div class='spacer'></div>
-  </ul>
-</div>
-<div class="row">
-  <div class="col-md-5 col-sm-5">
-    <p class="lead">Route:</p>
-    <p><%= @route.starting_point %>  to <%= @route.end_point %> </p>
-    <br>
-  </div>
-</div> 
 
-  <div id="map-canvas"></div>
+<body class="index_body"> 
+        <div id="show_item">
+          <ul class="nav nav-pills">
+            <li><%= link_to('Edit route', edit_route_path(@route)) %></li>
+            <li><%= link_to('Delete route', @route, :method => :delete, :confirm => 'Are you sure?') %></li>
+            <div class='spacer'></div>
+          </ul>
+        </div>
+        <div class="row">
+          <!-- <div class="col-md-5 col-sm-5"> -->
+            <br>
+            <br>
+            <div id="sign_in_head">Route:</div>
+            <br>
+            <div id="show_item"><%= @route.starting_point %>  to <%= @route.end_point %> </div>
+            <br>
+          <!-- </div> -->
+        </div> 
+
+</div>
+
+  <!-- <div id="map-canvas"></div> -->
 
 

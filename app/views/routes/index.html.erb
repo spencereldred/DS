@@ -3,15 +3,19 @@
 	<br>
 	<br>
 	<br>
+	<div id="sign_in_head">Saved routes:</div>
+	<br>
 	<% @routes.each do |route| %>
 	  <div class="row">
-	     <div class="col-md-4 col-sm-4">
+	     <!-- <div class="col-md-4 col-sm-4"> -->
 	      <p class="lead"><%= route.starting_point %> to <%= link_to(route.end_point, route) %>
-	    </div>
+	    <!-- </div> -->
 	    <div class="col-md-8 col-sm-8">
 	    </div>
 	  </div>
 	<% end %>
 
 </div>
+
+
 

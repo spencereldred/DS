@@ -67,8 +67,6 @@ $( window ).load(function() {
     new google.maps.places.Autocomplete(document.getElementById('starting_point'), options);
     new google.maps.places.Autocomplete(document.getElementById('end_point'), options);
     new google.maps.places.Autocomplete(document.getElementById('new_end_point'), options);
-
-
   }
 
   // geolocation function (browser/GPS sensor)
