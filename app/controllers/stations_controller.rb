@@ -18,22 +18,22 @@ before_filter :signed_in_user, only: [:index, :create, :new, :edit, :update, :de
   end
 
   def show
-    @station = Station.find(params[:id])
+    @station = Station.find(id)
     # gon.station = @station
   end
 
   def edit
-    @station = Station.find(params[:id])
+    @station = Station.find(id)
   end
 
   def update
-    station = Station.find(params[:id])
+    station = Station.find(id)
     station.update_attributes(station_params)
     redirect_to(station)
   end
 
   def destroy
-    station = Station.find(params[:id])
+    station = Station.find(id)
     station.delete
     redirect_to station_path
   end
@@ -41,6 +41,11 @@ before_filter :signed_in_user, only: [:index, :create, :new, :edit, :update, :de
   private
     def station_params
       params.require(:station).permit(:brand, :address, :latitude, :longitude, :state, :city, :highway_exit, :unleaded, :midgrade, :premium, :diesel, :last_updated, :route_id, :store_num)
+    end
+
+    # Spencer: Cool way to hide your params[:id] into a private method
+    def id
+      params[:id] 
     end
 end
 

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 	 def show
-    @user = User.find(params[:id])
+    @user = User.find(id)
   end
 
   def new
@@ -20,7 +20,7 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.find(params[:id])
+    @user = User.find(id)
     @user.update_attributes(user_params)
     redirect_to @user
   end
@@ -28,5 +28,10 @@ class UsersController < ApplicationController
   private
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
+    end
+
+    # Spencer: Cool way to hide your params[:id] into a private method
+    def id
+      params[:id] 
     end
 end

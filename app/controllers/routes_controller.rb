@@ -31,7 +31,7 @@ class RoutesController < ApplicationController
   end
 
   def show
-    @route = current_user.routes.find(params[:id])
+    @route = current_user.routes.find(id)
     # @stations = @route.stations
     gon.starting_point = @route.starting_point
     gon.end_point = @route.end_point
@@ -39,17 +39,17 @@ class RoutesController < ApplicationController
   end
 
   def edit
-    @route = Route.find(params[:id])
+    @route = Route.find(id)
   end
 
   def update
-    route = Route.find(params[:id])
+    route = Route.find(id)
     route.update_attributes route_params
     redirect_to(route)
   end
 
   def destroy
-    route = Route.find(params[:id])
+    route = Route.find(id)
     route.delete
     redirect_to(routes_path)
   end
@@ -57,6 +57,11 @@ class RoutesController < ApplicationController
   private
     def route_params
       params.require(:route).permit(:starting_point, :end_point)
+    end
+
+    # Spencer: Cool way to hide your params[:id] into a private method
+    def id
+      params[:id] 
     end
 end
 
